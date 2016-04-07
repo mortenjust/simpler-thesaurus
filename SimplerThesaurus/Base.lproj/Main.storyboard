@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="6198" systemVersion="14A297b" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15E65" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="6198"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="9532"/>
     </dependencies>
     <scenes>
         <!--Application-->
@@ -10,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="SimplerThesaurus" id="1Xt-HY-uBw">
+                            <menuItem title="Simpler Thesaurus" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="SimplerThesaurus" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Simpler Thesaurus" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About SimplerThesaurus" id="5kV-Vb-QxS">
+                                        <menuItem title="About Simpler Thesaurus" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -28,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide SimplerThesaurus" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Simpler Thesaurus" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -46,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit SimplerThesaurus" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Simpler Thesaurus" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -627,7 +628,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="SimplerThesaurus Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Simpler Thesaurus Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -641,19 +642,19 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SimplerThesaurus" customModuleProvider="target"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="75" y="0.0"/>
         </scene>
-        <!--Window Controller - Window-->
+        <!--Window Controller-->
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
                     <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-                        <rect key="contentRect" x="196" y="240" width="480" height="270"/>
+                        <rect key="contentRect" x="196" y="240" width="582" height="330"/>
                         <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
                     </window>
                     <connections>
@@ -662,20 +663,165 @@
                 </windowController>
                 <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="250"/>
+            <point key="canvasLocation" x="126" y="280"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="SimplerThesaurus" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="586" height="442"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <splitView misplaced="YES" arrangesAllSubviews="NO" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dlo-DS-9fn">
+                                <rect key="frame" x="0.0" y="0.0" width="586" height="394"/>
+                                <subviews>
+                                    <customView ambiguous="YES" misplaced="YES" id="Dvi-98-cgq">
+                                        <rect key="frame" x="0.0" y="0.0" width="290.5" height="394"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <scrollView ambiguous="YES" misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-ye-3jB">
+                                                <rect key="frame" x="0.0" y="0.0" width="287" height="364"/>
+                                                <clipView key="contentView" ambiguous="YES" id="xtb-zm-xsE">
+                                                    <rect key="frame" x="0.0" y="0.0" width="287" height="364"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" findStyle="panel" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" id="FMq-1l-CbF">
+                                                            <rect key="frame" x="0.0" y="0.0" width="287" height="364"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <size key="minSize" width="287" height="364"/>
+                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <size key="minSize" width="287" height="364"/>
+                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </clipView>
+                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="5II-pj-QaZ">
+                                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="I9Y-Wv-TxI">
+                                                    <rect key="frame" x="272" y="0.0" width="15" height="394"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                            </scrollView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dhv-Mu-oi9">
+                                                <rect key="frame" x="4" y="370" width="124" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="ALL SYNONYMS" id="9qw-Vu-Dhl">
+                                                    <font key="font" metaFont="system" size="10"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FRl-ye-3jB" firstAttribute="top" secondItem="Dvi-98-cgq" secondAttribute="top" constant="30" id="26a-cT-s86"/>
+                                            <constraint firstItem="FRl-ye-3jB" firstAttribute="leading" secondItem="Dvi-98-cgq" secondAttribute="leading" id="jRa-3J-veH"/>
+                                            <constraint firstAttribute="bottom" secondItem="FRl-ye-3jB" secondAttribute="bottom" id="knh-CQ-JLr"/>
+                                            <constraint firstAttribute="trailing" secondItem="FRl-ye-3jB" secondAttribute="trailing" id="tid-34-BVi"/>
+                                        </constraints>
+                                    </customView>
+                                    <customView ambiguous="YES" misplaced="YES" id="sZe-CG-RKV">
+                                        <rect key="frame" x="291.5" y="0.0" width="294.5" height="394"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <subviews>
+                                            <scrollView ambiguous="YES" misplaced="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VMp-YU-mWE">
+                                                <rect key="frame" x="0.0" y="0.0" width="290" height="364"/>
+                                                <clipView key="contentView" ambiguous="YES" id="Nbq-Qt-Nd4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="290" height="364"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <subviews>
+                                                        <textView ambiguous="YES" editable="NO" importsGraphics="NO" findStyle="panel" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" id="KBu-M5-Fxg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="290" height="364"/>
+                                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                            <color key="textColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <size key="minSize" width="290" height="364"/>
+                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                            <attributedString key="textStorage">
+                                                                <fragment content="I">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.49803921579999999" green="0.49803921579999999" blue="0.49803921579999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                    </attributes>
+                                                                </fragment>
+                                                            </attributedString>
+                                                            <color key="insertionPointColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                            <size key="minSize" width="290" height="364"/>
+                                                            <size key="maxSize" width="463" height="10000000"/>
+                                                        </textView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </clipView>
+                                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="cpL-ED-PdX">
+                                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                                <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="8pm-yW-LIJ">
+                                                    <rect key="frame" x="-100" y="-100" width="15" height="394"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </scroller>
+                                            </scrollView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="o0t-iF-G4T">
+                                                <rect key="frame" x="5" y="370" width="174" height="17"/>
+                                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="COMMON WORD SYNONYMS" id="puu-sF-HDn">
+                                                    <font key="font" metaFont="system" size="10"/>
+                                                    <color key="textColor" red="0.40000000600000002" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="VMp-YU-mWE" firstAttribute="top" secondItem="sZe-CG-RKV" secondAttribute="top" constant="30" id="6V9-yA-V7w"/>
+                                            <constraint firstAttribute="trailing" secondItem="VMp-YU-mWE" secondAttribute="trailing" id="brT-h4-OP2"/>
+                                            <constraint firstItem="VMp-YU-mWE" firstAttribute="leading" secondItem="sZe-CG-RKV" secondAttribute="leading" id="tu6-j1-jgT"/>
+                                            <constraint firstAttribute="bottom" secondItem="VMp-YU-mWE" secondAttribute="bottom" id="w5D-pn-vtn"/>
+                                        </constraints>
+                                    </customView>
+                                </subviews>
+                                <holdingPriorities>
+                                    <real value="250"/>
+                                    <real value="250"/>
+                                </holdingPriorities>
+                            </splitView>
+                            <searchField wantsLayer="YES" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IRy-S0-qa0">
+                                <rect key="frame" x="0.0" y="412" width="586" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Rko-Hm-tkj"/>
+                                </constraints>
+                                <searchFieldCell key="cell" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" placeholderString=" " drawsBackground="YES" usesSingleLineMode="YES" maximumRecents="10" recentsAutosaveName="thesaurus_recents" id="NEj-yO-ehk">
+                                    <font key="font" metaFont="system" size="23"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </searchFieldCell>
+                                <connections>
+                                    <action selector="searchHappened:" target="XfG-lQ-9wD" id="VnJ-vg-awc"/>
+                                </connections>
+                            </searchField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Dlo-DS-9fn" secondAttribute="trailing" id="4E4-Sf-D52"/>
+                            <constraint firstItem="IRy-S0-qa0" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="EIj-X5-vij"/>
+                            <constraint firstItem="Dlo-DS-9fn" firstAttribute="top" secondItem="IRy-S0-qa0" secondAttribute="bottom" constant="16" id="OQT-Wa-NEg"/>
+                            <constraint firstItem="Dlo-DS-9fn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="SBz-V5-7ds"/>
+                            <constraint firstItem="IRy-S0-qa0" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="SMV-h0-THu"/>
+                            <constraint firstAttribute="bottom" secondItem="Dlo-DS-9fn" secondAttribute="bottom" id="UxE-cl-HgD"/>
+                            <constraint firstAttribute="trailing" secondItem="IRy-S0-qa0" secondAttribute="trailing" id="ejM-2q-soI"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="allSynonymsField" destination="FMq-1l-CbF" id="hmM-Rw-oJu"/>
+                        <outlet property="searchField" destination="IRy-S0-qa0" id="Dym-S5-bJk"/>
+                        <outlet property="simpleSynonymsField" destination="KBu-M5-Fxg" id="Ufu-Yu-UV1"/>
+                    </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="655"/>
+            <point key="canvasLocation" x="52" y="789"/>
         </scene>
     </scenes>
 </document>

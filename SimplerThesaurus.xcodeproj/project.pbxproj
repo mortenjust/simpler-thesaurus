@@ -11,6 +11,10 @@
 		C8B51C721CB3781C00C3C323 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B51C711CB3781C00C3C323 /* ViewController.swift */; };
 		C8B51C741CB3781C00C3C323 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8B51C731CB3781C00C3C323 /* Assets.xcassets */; };
 		C8B51C771CB3781C00C3C323 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8B51C751CB3781C00C3C323 /* Main.storyboard */; };
+		C8B51C801CB3783700C3C323 /* thesaurus-en.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8B51C7E1CB3783700C3C323 /* thesaurus-en.txt */; };
+		C8B51C811CB3783700C3C323 /* Thesaurus.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B51C7F1CB3783700C3C323 /* Thesaurus.swift */; };
+		C8B51C831CB37DED00C3C323 /* SimpleWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8B51C821CB37DED00C3C323 /* SimpleWords.swift */; };
+		C8B51C851CB37E0200C3C323 /* en.txt in Resources */ = {isa = PBXBuildFile; fileRef = C8B51C841CB37E0200C3C323 /* en.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		C8B51C731CB3781C00C3C323 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8B51C761CB3781C00C3C323 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C8B51C781CB3781C00C3C323 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8B51C7E1CB3783700C3C323 /* thesaurus-en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "thesaurus-en.txt"; sourceTree = "<group>"; };
+		C8B51C7F1CB3783700C3C323 /* Thesaurus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Thesaurus.swift; sourceTree = "<group>"; };
+		C8B51C821CB37DED00C3C323 /* SimpleWords.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleWords.swift; sourceTree = "<group>"; };
+		C8B51C841CB37E0200C3C323 /* en.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = en.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,11 @@
 		C8B51C6E1CB3781C00C3C323 /* SimplerThesaurus */ = {
 			isa = PBXGroup;
 			children = (
+				C8B51C7E1CB3783700C3C323 /* thesaurus-en.txt */,
+				C8B51C7F1CB3783700C3C323 /* Thesaurus.swift */,
+				C8B51C841CB37E0200C3C323 /* en.txt */,
 				C8B51C6F1CB3781C00C3C323 /* AppDelegate.swift */,
+				C8B51C821CB37DED00C3C323 /* SimpleWords.swift */,
 				C8B51C711CB3781C00C3C323 /* ViewController.swift */,
 				C8B51C731CB3781C00C3C323 /* Assets.xcassets */,
 				C8B51C751CB3781C00C3C323 /* Main.storyboard */,
@@ -120,7 +132,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B51C741CB3781C00C3C323 /* Assets.xcassets in Resources */,
+				C8B51C801CB3783700C3C323 /* thesaurus-en.txt in Resources */,
 				C8B51C771CB3781C00C3C323 /* Main.storyboard in Resources */,
+				C8B51C851CB37E0200C3C323 /* en.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,7 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				C8B51C721CB3781C00C3C323 /* ViewController.swift in Sources */,
+				C8B51C831CB37DED00C3C323 /* SimpleWords.swift in Sources */,
 				C8B51C701CB3781C00C3C323 /* AppDelegate.swift in Sources */,
+				C8B51C811CB3783700C3C323 /* Thesaurus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
