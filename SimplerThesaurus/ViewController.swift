@@ -57,7 +57,6 @@ class ViewController: NSViewController {
     func setSimpleWordsFormatting(){
         let editorBackgroundColor = NSColor(red:0.988, green:0.988, blue:0.980, alpha:1)
         let editorTextColor = NSColor(red:0.349, green:0.349, blue:0.314, alpha:1)
-        let canvasBackgroundColor = NSColor(red:0.988, green:0.988, blue:0.980, alpha:1)
         let editorFont = NSFont(name: "Avenir Next", size: 23)
         
         simpleSynonymsField.font = editorFont!
