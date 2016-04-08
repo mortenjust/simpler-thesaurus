@@ -49,10 +49,9 @@ class Thesaurus: NSObject {
             let components = rawEntry.componentsSeparatedByString(",")
             let word = components[0]
             
-            var i:Int;
             var synonyms = [String]()
-            for i=1;i < components.count;i++ {
-                synonyms.append(components[i])
+            for component in components {
+                synonyms.append(component)
             }
             
             let thesaurusItem = ThesaurusItem(word: word, synonyms: synonyms)
